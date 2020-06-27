@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">BucketDropsNew</string>
+    <string name="str_add_drop">Add a drop</string>
+    <string name="sans_serif_thin">sans-serif-thin</string>
+    <string name="fragment_xml_a">Hellow I Am Fragment A amd I will be added to the Activity in XML</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_xml_b">Hellow I Am Fragment B amd I will be added to the Activity in XML</string>
+    <string name="hint_et_drop">What is it?</string>
+    <string name="str_add_it">Add it</string>
+    <string name="str_no_items">No Items To Display</string>
+    <string name="notif_title">Achievement</string>
+    <string name="notif_message">"You are nearing your goal "</string>
+</resources>
