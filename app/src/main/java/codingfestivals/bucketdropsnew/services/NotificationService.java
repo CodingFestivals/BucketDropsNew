@@ -80,9 +80,10 @@ public class NotificationService extends IntentService {
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
         NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(this);
         notificationManagerCompat.notify(100 + (++i), builder.build());*/
+        String message = drop.getWhat();
         NotificationCompat.Builder builder = new NotificationCompat.Builder(this, BucketDropsApplication.CHANNEL_ID)
                 .setSmallIcon(R.drawable.ic_mail_outline)
-                .setContentTitle(getString(R.string.notif_title))
+                .setContentTitle(message)
                 .setContentText(getString(R.string.notif_message))
                 .setAutoCancel(true)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
@@ -91,7 +92,7 @@ public class NotificationService extends IntentService {
         Log.d("utsab","Notification "+i);
     }
 
-    public  void fireNotification(Context context) {
+    /*public  void fireNotification(Context context) {
         //Log.d("utsab", "onHandleIntentvvv :" + (++i));
         //Bitmap largeIcon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_drop);
         Intent intent = new Intent(context, MainActivity.class);
@@ -105,7 +106,7 @@ public class NotificationService extends IntentService {
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT);
         NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(context);
         notificationManagerCompat.notify(100, builder.build());
-    }
+    }*/
 
     private boolean isNotificationNeed(long added, long when) {
         long now = System.currentTimeMillis();
